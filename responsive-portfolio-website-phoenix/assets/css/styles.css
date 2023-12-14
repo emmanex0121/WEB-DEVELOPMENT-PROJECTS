@@ -3,10 +3,21 @@
 
 /* =================== VARIABLES CSS =================== */
 :root {
+    --header-height: 3.5rem;
+
+    /* ============= Colors ============= */
+    /* Color mode HSL(hue, saturation, lightness) */
 
 /* ============ Font and Typography ============ */
 /* .5rem = 8px / 1rem = 16px ... */
 --body-font: 'Bai Jamjuree', sans-serif;
+--biggest-font-size: 2.5rem;
+--h1-font-size: 1.75rem;
+--h2-font-size: 1.25rem;
+--h3-font-siz: 1.125rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+--smaller-font-size: .75rem;
 }
 
 /* ================== BASE =================== */
@@ -16,6 +27,44 @@
     margin: 0;
 }
 
+html {
+    scroll-behaviour: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color)
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color)
+    font-weight: var(--font-bold)
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================ THEME ================= */
+
+/* =============== Variables Dark Theme ================ */
+
+/* ===========
+    Color changes in some parts of
+    the website, in dark theme
+    ========== */
 
 /* ================ REUSABLE CSS CLASSES========== */
 .container {
@@ -23,12 +72,44 @@
     margin-inline: 1.5rem;
 }
 
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 4rem 2rem;
+}
+
+/* About me */
 .section__title-1,
 .section__title-2 {
     position: 
     font-size: var(--h1-font-size);
     width: max-content;
     margin: .75rem auto 2rem;
+}
+
+.section__title-1 span,
+.section__title-2 span {
+    z-index: 5;
+    position: relative;
+}
+
+.section__title-1::after,
+.section__title-2::after {
+    content: "";
+    width: 40px;
+    height: 28px;
+    background-color: hsla(14, 98%, 50%, .2);
+    position: absolute;
+    top: -4px;
+    right: -8px;
+}
+
+.section__title-2::after {
+    top: initial;
+    bottom: -4px;
 }
 
 .geometric-box {
@@ -39,7 +120,7 @@
     rotate: -30deg;
 }
 
-/* geometric-box::after {
+geometric-box::after {
     content: "";
     position: absolute;
     width: 16px;
@@ -47,7 +128,7 @@
     border: 3px solid var(--black-color);
     left: -5px;
     top: -5px;
-} */
+}
 
 /* ================ HEADER AND NAV ============ */
 .header{
@@ -82,5 +163,15 @@
     height: 32px;
     background-color: black;
     color: var(--white-color);
+    display: grid;
     place-items: center;
+}
+
+.nav__logo-circle{
+    border-radius: 50%;
+}
+
+.nav_toggle{
+    font-size: 1.25rem;
+    cursor: pointer;
 }
