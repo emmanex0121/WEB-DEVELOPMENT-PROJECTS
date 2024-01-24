@@ -8,16 +8,16 @@
     /* ============= Colors ============= */
     /* Color mode HSL(hue, saturation, lightness) */
 
-/* ============ Font and Typography ============ */
-/* .5rem = 8px / 1rem = 16px ... */
---body-font: 'Bai Jamjuree', sans-serif;
---biggest-font-size: 2.5rem;
---h1-font-size: 1.75rem;
---h2-font-size: 1.25rem;
---h3-font-siz: 1.125rem;
---normal-font-size: .938rem;
---small-font-size: .813rem;
---smaller-font-size: .75rem;
+    /* ============ Font and Typography ============ */
+    /* .5rem = 8px / 1rem = 16px ... */
+    --body-font: "Bai Jamjuree", sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-siz: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
 }
 
 /* ================== BASE =================== */
@@ -84,7 +84,7 @@ img {
 /* About me */
 .section__title-1,
 .section__title-2 {
-    position: 
+    position: relative; 
     font-size: var(--h1-font-size);
     width: max-content;
     margin: .75rem auto 2rem;
@@ -128,6 +128,10 @@ geometric-box::after {
     border: 3px solid var(--black-color);
     left: -5px;
     top: -5px;
+}
+
+.main {
+    overflow: hidden; /* Animation scroll reveal */
 }
 
 /* ================ HEADER AND NAV ============ */
