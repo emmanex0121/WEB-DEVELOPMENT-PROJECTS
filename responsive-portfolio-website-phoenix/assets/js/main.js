@@ -20,9 +20,16 @@ if (navClose){
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav__link')
 
-
-/*=============== SHADOW HEADER ===============*/
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    // for each nav_link click remove show-menu i.e. close menu
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction)) 
+    
+    /*=============== SHADOW HEADER ===============*/
 
 
 /*=============== EMAIL JS ===============*/
