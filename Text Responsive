@@ -5,6 +5,9 @@ R
 .nav__logo-name
 Phoenix Kheed
 
+.nav__title
+Menu
+
 .nav__name
 Phoenix
 
