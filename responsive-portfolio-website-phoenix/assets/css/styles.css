@@ -152,7 +152,7 @@ img {
     rotate: -30deg;
 }
 
-geometric-box::after {
+.geometric-box::after {
     content: "";
     position: absolute;
     width: 16px;
@@ -321,7 +321,7 @@ geometric-box::after {
 }
 
 .home__perfil{
-    position: relative;
+    position: absolute;
     justify-self: center;
 }
 
