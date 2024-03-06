@@ -1,33 +1,53 @@
 ================= HEADER =================
-.nav__logo-circle
+.nav\_\_logo-circle
 R
 
-.nav__logo-name
+.nav\_\_logo-name
 Phoenix Kheed
 
-.nav__title
+.nav\_\_title
 Menu
 
-.nav__name
+.nav\_\_name
 Phoenix
 
 .nav_link
 Home - About Me - Projects - Contact Me
 
-
 ================ HOME ===============
-.home__name
+.home\_\_name
 Phoenix Kheed
 
-.home__social-link
+.home\_\_social-link
 https://www.intagram.com/
 https://www.linkedin.com/
 https://www.github.com/
 
-.home__description
+.home\_\_description
 <b>Frontend Developer</b>, with knowledge in web
 development and design, I offer the best
 projects resulting in quality work.
 
-.home__scroll-text
-Scroll Down
+.home\_\_scroll-text
+Scroll Downser
+
+========= ABOUT ===========
+.section\_\_title-1
+About Me.
+
+.about\_\_description
+Passionate about creating <b>Web Pages</b> with
+<b>UI/UX User Interface</b>, I have years of
+experience and many more clients are happy with
+the projects carried out.
+
+.about\_\_item
+<b>My Skills Are:</b> HTML, CSS, JavaScript,
+React, Git & GitHub, Bootsrap, Flutter &
+Figma.
+
+.button
+Contact Me
+
+.button\_\_ghost
+https://www.linkedin.com/
