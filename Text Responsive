@@ -53,10 +53,10 @@ Contact Me
 https://www.linkedin.com/
 
 ============== SERVICES ================
-.section__title-2
+.section\_\_title-2
 Services.
 
-.services__title .services__description
+.services**title .services**description
 Web Design
 Beautiful and elegant designs with
 interfaces that are intuitive, efficient
@@ -69,3 +69,5 @@ flawless user experience.
 
 Mobile App
 Design and transform websites projects
+into mobile apps to provide a seamless
+user experience
