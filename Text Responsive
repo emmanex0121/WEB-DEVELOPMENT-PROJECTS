@@ -141,4 +141,27 @@ https://www.linkedin.com/
 ===================== CONTACT JS ======================
 // serviceID - templateID - #form - publicKey
 
+    // Show sent message
+        Message sent successfully ✅
+    
+    // remove message after five seconds
 
+    // Clear input fields
+
+    // show error message
+        message not sent (service error) ❌
+
+Subject *
+New message from {{user_name}}
+
+Content *
+Names: {{user_name}}
+
+Email: {{user_email}}
+
+Subject: {{user_subject}}
+
+Message: {{user_message}}
+
+Best wishes,
+EmailJS team
