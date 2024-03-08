@@ -1010,11 +1010,24 @@ img {
 }
 
 
-
-
-
-
 /* =============== SCROLL BAR ============= */
-/* =============== SCROLL BAR ============= */
-/* =============== SCROLL BAR ============= */
+::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 65%);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 55%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(0, 0%, 45%);
+}
+
+
+
+/* =============== SCROLL UP ============= */
+/* =============== BREAKPOINTS ============= */
 /* For small Devices */
