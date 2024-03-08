@@ -141,6 +141,8 @@ https://www.linkedin.com/
 ===================== CONTACT JS ======================
 // serviceID - templateID - #form - publicKey
 
+    #contact-message
+
     // Show sent message
         Message sent successfully ✅
     
@@ -149,7 +151,7 @@ https://www.linkedin.com/
     // Clear input fields
 
     // show error message
-        message not sent (service error) ❌
+        Message not sent (service error) ❌
 
 Subject *
 New message from {{user_name}}
@@ -165,3 +167,12 @@ Message: {{user_message}}
 
 Best wishes,
 EmailJS team
+
+
+==================== FOOTER =======================
+.footer__links
+About - Services - Projects
+
+.footer__copy
+&#169; All Rights Reserved By
+<a href="">Phoenix Kheed.</a>

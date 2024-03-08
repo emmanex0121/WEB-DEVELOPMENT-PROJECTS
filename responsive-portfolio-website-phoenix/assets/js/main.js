@@ -47,7 +47,7 @@ const sendEmail = (e) => {
     e.preventDefault()
 
     // serviceID - templateID - #form - publicKey
-    emailjs.sendEmail('service_9ixsztp','template_vnugv7y','#contact-form','3n7ifkUOowaI47Ert')
+    emailjs.sendForm('service_9ixsztp','template_vnugv7y','#contact-form','3n7ifkUOowaI47Ert')
     .then(() =>{
         // Show sent message
         contactMessage.textContent = 'Message sent successfully ✅'
@@ -56,10 +56,17 @@ const sendEmail = (e) => {
         setTimeout(() =>{
             contactMessage.textContent = ''
         }, 5000)
+
+        // Clear input fields
+        contactForm.reset()
+    }, () =>{
+          // show error message
+          contactMessage.textContent = 'Message not sent (service error) ❌'
     })
+}
 
 contactForm.addEventListener('submit', sendEmail)
-}
+
 
 /*=============== SHOW SCROLL UP ===============*/
 
