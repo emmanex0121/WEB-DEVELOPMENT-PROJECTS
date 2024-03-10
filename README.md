@@ -1,1 +1,3 @@
-Phoenix's Web Development Projects
+#My Web Development Projects
+
+Author: Emmanuel Nwachukwu
