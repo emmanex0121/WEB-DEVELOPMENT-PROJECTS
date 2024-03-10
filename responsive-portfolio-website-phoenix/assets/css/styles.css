@@ -68,6 +68,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background-color .4s; /* For Dark Mode */
 }
 
 h1,
@@ -149,6 +150,25 @@ body.dark-theme{
     background-color: var(--body-color);
 }
 
+.dark-theme :is(.contact__mail, .contact__input, .contact__label){
+    background-color: var(--container-color);
+}
+
+.dark-theme .footer{
+    background-color: hsl(0, 0%, 4%);
+}
+
+.dark-theme::-webkit-scrollbar{
+    background-color: hsl(0, 0%, 20%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb{
+    background-color: hsl(0, 0%, 30%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(0, 0%, 40%);
+}
 
 
 
@@ -229,7 +249,7 @@ body.dark-theme{
   left: 0;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
-  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, background-color .4s;
 }
 
 .nav {
@@ -1113,3 +1133,78 @@ body.dark-theme{
 
 /* =============== BREAKPOINTS ============= */
 /* For small Devices */
+@media screen and (max-width: 340px){
+    .container{
+        margin-inline: 1rem;
+    }
+    
+    .home__image{
+        width: 180px;
+    }
+
+    .about__image{
+        width: 180px;
+    }
+
+    .about__shadow{
+        height: 330px;
+        right: -2.5rem;
+    }
+
+    .contact__data{
+        width: 100%;
+    }
+
+    .contact__data .section__title-2{
+        transform: translateX(0);
+    }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .home__container,
+    .about__container,
+    .projects__container{
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+
+    .contact__data{
+        width: 350px;
+        padding: 4rem 1.5rem;
+        margin-inline: auto;
+    }
+    .contact__container{
+        grid-template-columns: 500px;
+        justify-content: center;
+    }
+    .contact__group{
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 1rem;
+    }
+    .contact__social{
+        background-color: transparent;
+    }
+    .contact__social-arrow{
+        filter: invert(1);
+    }
+    .contact__social-description-1{
+        color: var(--text-color);
+    }
+    .contact__social-description-2{
+        color: var(--title-color);
+    }
+    .dark-theme .contact__social-arrow{
+        filter: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .services__container{
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+/* For large devices */
